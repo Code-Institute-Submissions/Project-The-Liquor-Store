@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def display_menu():
-    return render_template('menu.html')
+    return render_template('index.html')
 
 def calculate_total(price, quantity):
     return price * quantity
@@ -21,6 +21,7 @@ def place_order():
         selection = int(request.form.get('selection'))
         quantity = int(request.form.get('quantity'))
         total = 0
+        item_name = ""
 
         if selection == 1:
             if quantity > 0:
@@ -78,4 +79,3 @@ def place_order():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
