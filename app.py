@@ -42,18 +42,21 @@ def liquor_store():
                 total = calculate_total(20, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
             elif selection == 2:
                 print("You have chosen Red Label 750ml")
                 quantity = int(input("Please enter the quantity: "))
                 total = calculate_total(25, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
             elif selection == 3:
                 print("You have chosen Jack Daniels 750ml")
                 quantity = int(input("Please enter the quantity: "))
                 total = calculate_total(30, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
             else:
                 print("Invalid selection")
 
@@ -71,18 +74,21 @@ def liquor_store():
                 total = calculate_total(30, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
             elif selection == 2:
                 print("You have chosen Merlot")
                 quantity = int(input("Please enter the quantity: "))
                 total = calculate_total(25, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
             elif selection == 3:
                 print("You have chosen Pinot Noir")
                 quantity = int(input("Please enter the quantity: "))
                 total = calculate_total(35, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
             else:
                 print("Invalid selection")
 
@@ -100,18 +106,21 @@ def liquor_store():
                 total = calculate_total(30, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
             elif selection == 2:
                 print("You have chosen Sauvignon Blanc")
                 quantity = int(input("Please enter the quantity: "))
                 total = calculate_total(25, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
             elif selection == 3:
                 print("You have chosen Riesling")
                 quantity = int(input("Please enter the quantity: "))
                 total = calculate_total(35, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
 
         elif user_input == 4:
             print("You have chosen Beer")
@@ -127,17 +136,26 @@ def liquor_store():
                 total = calculate_total(10, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
             elif selection == 2:
                 print("You have chosen Heineken")
                 quantity = int(input("Please enter the quantity: "))
                 total = calculate_total(8, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
             elif selection == 3:
                 print("You have chosen Corona")
                 quantity = int(input("Please enter the quantity: "))
                 total = calculate_total(5, quantity)
                 print("Your total is: $", total)
                 place_order()
+                
         else:
             print("Invalid Number")
+
+# Call the functions
+if __name__ == "__main__":
+    liquor_store()
+
+
