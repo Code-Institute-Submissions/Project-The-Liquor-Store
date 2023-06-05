@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 # Rest of your Flask app code
-
+@app.route('/')
 def display_menu():
     print("Welcome to the Liquor Store")
     print("Please select the number for your preference:")
