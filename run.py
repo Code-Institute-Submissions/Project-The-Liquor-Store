@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def display_menu():
-    return render_template('pages/index.html')
+    return render_template('index.html')
 
 def calculate_total(price, quantity):
     return price * quantity
