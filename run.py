@@ -21,7 +21,6 @@ def place_order():
         selection = int(request.form.get('selection'))
         quantity = int(request.form.get('quantity'))
         total = 0
-        item_name = ""
 
         if selection == 1:
             if quantity > 0:
