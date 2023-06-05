@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Liquor Store Menu</title>
+</head>
+<body>
+    <h1>Welcome to the Liquor Store</h1>
+    <h2>Please select the number for your preference:</h2>
+    <form action="/order" method="POST">
+        <label for="selection">Select Category:</label>
+        <select name="selection" id="selection">
+            <optgroup label="Hard Liquor">
+                <option value="1">Vodka 750ml ($20)</option>
+                <option value="2">Red Label 750ml ($25)</option>
+                <option value="3">Jack Daniels 750ml ($30)</option>
+            </optgroup>
+            <optgroup label="Red Wine">
+                <option value="4">Cabernet Sauvignon ($30)</option>
+                <option value="5">Merlot ($25)</option>
+                <option value="6">Pinot Noir ($35)</option>
+            </optgroup>
+            <optgroup label="White Wine">
+                <option value="7">Chardonnay ($30)</option>
+                <option value="8">Sauvignon Blanc ($25)</option>
+                <option value="9">Riesling ($35)</option>
+            </optgroup>
+            <optgroup label="Beer">
+                <option value="10">Carlsberg ($10)</option>
+                <option value="11">Heineken ($8)</option>
+                <option value="12">Corona ($5)</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity" min="1" required>
+        <br><br>
+        <label for="continue_order">Do you want to continue ordering?</label>
+        <input type="text" name="continue_order" id="continue_order" required>
+        <br><br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" name="phone_number" id="phone_number" required>
+        <br><br>
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" rows="3" required></textarea>
+        <br><br>
+        <label for="id_number">ID Card Number:</label>
+        <input type="text" name="id_number" id="id_number" required>
+        <br><br>
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
