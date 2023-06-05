@@ -35,7 +35,8 @@ textarea {
 }
 
 select {
-    width: 100%;
+    width: 50%; 
+    margin: 0 auto; 
     padding: 8px;
     font-size: 14px;
     border: 1px solid #ccc;
