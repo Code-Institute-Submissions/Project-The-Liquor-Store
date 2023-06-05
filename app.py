@@ -11,17 +11,21 @@ def calculate_total(price, quantity):
     return price * quantity
 
 def place_order():
-    name = input("Please enter your name: ")
-    phone_number = input("Please enter your phone number: ")
-    address = input("Please enter your address: ")
-    id_number = input("Please enter your ID card number for age verification: ")
+    continue_order = input("Do you want to continue ordering? (yes/no): ")
+    if continue_order.lower() == "yes":
+        name = input("Please enter your name: ")
+        phone_number = input("Please enter your phone number: ")
+        address = input("Please enter your address: ")
+        id_number = input("Please enter your ID card number for age verification: ")
 
-    print("Thank you for your order, " + name + "!")
-    print("One of our delivery agents will contact you at " + phone_number + " for order confirmation.")
-    print("Once we receive order confirmation from you, we will deliver your order to " + address + ".")
-    print("Your ID card number " + id_number + " is under age verification process.")
-    print("We will contact you within 30 minutes for further verification.")
-    print("Thank you for your order!")
+        print("Thank you for your order, " + name + "!")
+        print("One of our delivery agents will contact you at " + phone_number + " for order confirmation.")
+        print("Once we receive order confirmation from you, we will deliver your order to " + address + ".")
+        print("Your ID card number " + id_number + " is under age verification process.")
+        print("We will contact you within 30 minutes for further verification.")
+        print("Thank you for your order!")
+    else:
+        print("Thank you for shopping with us. Goodbye!")
 
 def liquor_store():
     while True:
@@ -157,5 +161,3 @@ def liquor_store():
 # Call the functions
 if __name__ == "__main__":
     liquor_store()
-
-
