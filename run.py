@@ -77,4 +77,5 @@ def place_order():
         return "Thank you for shopping with us. Goodbye!"
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
+
