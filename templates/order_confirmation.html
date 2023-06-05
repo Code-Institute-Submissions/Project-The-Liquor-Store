@@ -1,58 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
     <title>Order Confirmation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .order-details {
-            margin-top: 20px;
-        }
-
-        .order-details .label {
-            font-weight: bold;
-        }
-
-        .order-details .value {
-            margin-left: 10px;
-        }
-
-        .thank-you {
-            text-align: center;
-            margin-top: 30px;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Order Confirmation</h1>
-        <div class="order-details">
-            <p><span class="label">Order Number:</span> <span class="value">12345</span></p>
-            <p><span class="label">Date:</span> <span class="value">June 5, 2023</span></p>
-            <p><span class="label">Customer Name:</span> <span class="value">John Doe</span></p>
-            <p><span class="label">Total Amount:</span> <span class="value">$100.00</span></p>
-        </div>
-        <p class="thank-you">Thank you for your order!</p>
-    </div>
+    <h1>Order Confirmation</h1>
+    <p>Thank you for your order! Please review the details below:</p>
+    <hr>
+    <h2>Customer Information</h2>
+    <p>Name: {{ name }}</p>
+    <p>Phone Number: {{ phone_number }}</p>
+    <p>Address: {{ address }}</p>
+    <p>ID Number: {{ id_number }}</p>
+    <hr>
+    <h2>Order Details</h2>
+    <p>Item: {{ item_name }}</p>
+    <p>Quantity: {{ quantity }}</p>
+    <p>Total: ${{ total }}</p>
+    <hr>
+    <p>Thank you for shopping with us. Goodbye!</p>
 </body>
 </html>
