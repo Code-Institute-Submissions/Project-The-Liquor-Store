@@ -1,18 +1,19 @@
 body {
-    background-color: #a78181;
+    background-color: #b4b2b2;
+    color: #afadad;
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #333;
     border-radius: 10px;
 }
 
 h1, h2 {
     text-align: center;
-    color: #fff;
+    color: #000;
     text-decoration: underline;
 }
 
@@ -20,7 +21,7 @@ label {
     display: block;
     margin-bottom: 5px;
     font-size: 16px;
-    color: #fff;
+    color: #000;
     font-weight: bold;
     text-align: center;
 }
@@ -33,19 +34,19 @@ select {
     width: 100%;
     padding: 8px;
     font-size: 14px;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     border-radius: 4px;
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: #000;
     font-weight: bold;
     text-align: center;
-    color: #e4e1e1;
+    color: #000;
 }
 
 select {
     background: url('arrow.png') no-repeat right center;
     background-size: 12px;
-    color: #e4e1e1;
+    color: #000;
 }
 
 textarea {
